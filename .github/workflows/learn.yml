@@ -1,0 +1,14 @@
+name: Learning github actions
+
+on: [push]
+
+env:
+  DBLINK: cyusa
+
+jobs:
+  output_env_vars:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output my name
+        run: 
+          echo $DBLINK
