@@ -14,4 +14,4 @@ jobs:
           echo $DBLINK
       - name: Check in names
         run: 
-          echo ${{secrets.NAME}}
+          echo ${{vars.NAME}}
