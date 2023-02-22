@@ -12,3 +12,6 @@ jobs:
       - name: Output my name
         run: 
           echo $DBLINK
+      - name: Check in names
+        run: 
+          echo ${{secrets.NAME}}
